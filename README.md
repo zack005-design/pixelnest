@@ -4,9 +4,9 @@
 
 A visual discovery app for curious minds. Explore 126 bundled images, collect ideas into boards, and add your own inspiration through a responsive masonry interface.
 
-[**Open PixelNest →**](https://zack005-design.github.io/webpage/) · [Image credits](CREDITS.md) · [Contributing](CONTRIBUTING.md)
+[**Open PixelNest →**](https://zack005-design.github.io/pixelnest/) · [Image credits](CREDITS.md) · [Contributing](CONTRIBUTING.md)
 
-[![Deploy PixelNest](https://github.com/zack005-design/webpage/actions/workflows/deploy.yml/badge.svg)](https://github.com/zack005-design/webpage/actions/workflows/deploy.yml)
+[![Deploy PixelNest](https://github.com/zack005-design/pixelnest/actions/workflows/deploy.yml/badge.svg)](https://github.com/zack005-design/pixelnest/actions/workflows/deploy.yml)
 
 ## What you can do
 
@@ -21,8 +21,8 @@ A visual discovery app for curious minds. Explore 126 bundled images, collect id
 Use Node.js 22.13 or newer. The deployment workflow uses Node.js 22; `.nvmrc` selects that major version for compatible local tools.
 
 ```sh
-git clone https://github.com/zack005-design/webpage.git
-cd webpage
+git clone https://github.com/zack005-design/pixelnest.git
+cd pixelnest
 npm ci
 npm run dev
 ```
@@ -41,13 +41,13 @@ For a production preview, run `npm run build` followed by `npm run preview`.
 
 ## Deployment
 
-GitHub Pages publishes this app at **[zack005-design.github.io/webpage](https://zack005-design.github.io/webpage/)**.
+GitHub Pages publishes this app at **[zack005-design.github.io/pixelnest](https://zack005-design.github.io/pixelnest/)**.
 
 Each push to `main` runs the [deployment workflow](.github/workflows/deploy.yml): install locked dependencies, check TypeScript, build with Vite, upload `dist/`, and deploy to Pages. You can also run **Deploy PixelNest to GitHub Pages** manually from the Actions tab.
 
 For a fork, enable **Settings → Pages → Build and deployment → Source → GitHub Actions**. The workflow needs Pages enabled and permission to deploy to the `github-pages` environment. Public repositories can use Pages without a paid plan; private repositories require a supporting plan.
 
-Vite uses `base: './'`, and the app uses relative image paths and hash navigation such as `#/pin/p100`. This supports a repository subdirectory without server-side route rewrites. Keep these settings when deploying under a path like `/webpage/`.
+Vite uses `base: './'`, and the app uses relative image paths and hash navigation such as `#/pin/p100`. This supports a repository subdirectory without server-side route rewrites. Keep these settings when deploying under a path like `/pixelnest/`.
 
 If a deployment fails, open the failed workflow step in Actions. A successful build alone does not confirm that Pages deployed. A “Get Pages site failed” error usually means Pages needs to be enabled or its source configured to GitHub Actions.
 
