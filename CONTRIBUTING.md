@@ -6,7 +6,7 @@ Use Node.js 22.13 or newer and run `npm ci`, then `npm run dev`. Keep `package-l
 
 Before submitting a change:
 
-1. Run `npm run build`; it includes the TypeScript check.
+1. Run `npm test` and `npm run build`; the build includes the TypeScript check.
 2. Run `npm run preview` and check the affected interactions in the production app.
 3. Check a narrow viewport and keyboard navigation for interface changes.
 4. Confirm image paths are relative and shared hash links still work after a refresh.

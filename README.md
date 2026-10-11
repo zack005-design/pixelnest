@@ -33,6 +33,7 @@ Open the local URL printed by Vite. No environment variables or API keys are req
 | --- | --- |
 | `npm run dev` | Start the development server |
 | `npm run typecheck` | Check TypeScript without generating files |
+| `npm test` | Check discovery, Following feeds, board saves, safe links, and shared routes |
 | `npm run build` | Check types and create the production app in `dist/` |
 | `npm run preview` | Serve the production build locally |
 
